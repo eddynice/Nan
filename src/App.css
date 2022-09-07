@@ -1,0 +1,24 @@
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 45px 1fr 60px;
+    grid-template-rows: 1fr;
+}
+
+.header,
+.main,
+.footer {
+    padding: 30px;
+}
+
+.header {
+    background: #000;
+}
+
+.main {
+    background: #000;
+}
+
+.siderbar {
+    color: green;
+}

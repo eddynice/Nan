@@ -1,0 +1,39 @@
+.main {}
+
+.icon {
+    cursor: pointer;
+    margin-top: 1.5em;
+    margin-left: 0.5em;
+    text-align: center;
+    -webkit-text-orientation: upright;
+    text-orientation: upright;
+    width: 100%;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl
+}
+
+.a {
+    background-color: rgb(255 255 255);
+    border: 1px solid rgb(255 255 255);
+    border-radius: 100%;
+    color: rgb(0 0 0);
+    font-family: Cinzel Decorative, cursive;
+    font-size: 1.7em;
+    text-decoration: none;
+    transition: 2.5s ease-in-out;
+    width: 10%;
+}
+
+.footers {
+    display: block;
+    position: absolute;
+    bottom: 100px;
+    left: 10px;
+    height: 25px;
+    padding-bottom: .2em;
+    transition: .2s ease-in-out;
+    width: 20px;
+    margin-right: 3em;
+    ;
+}
