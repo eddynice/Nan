@@ -8,6 +8,8 @@ export default function App() {
   console.log(errors);
   
   return (
+    <>
+   
     <form onSubmit={handleSubmit(onSubmit)}>
       <input type="text" placeholder="Name" {...register("Name", {})} />
       <input type="text" placeholder="Email" {...register("Email", {required: true, pattern: /^\S+@\S+$/i})} />
@@ -22,5 +24,7 @@ export default function App() {
 
       <input type="submit" />
     </form>
+    
+    </>
   );
 }

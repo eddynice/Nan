@@ -46,15 +46,3 @@
     line-height: 2em;
     font-weight: bold;
 }
-
-.boxes1:hover {
-    background-color: rgb(255 255 255);
-    opacity: 1;
-    color: #000000;
-}
-
-.boxes2:hover {
-    background-color: rgb(255 255 255);
-    opacity: 1;
-    color: #000000;
-}

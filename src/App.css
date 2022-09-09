@@ -7,7 +7,7 @@
 
 .header,
 .main,
-.footer {
+.sidebar {
     padding: 30px;
 }
 
@@ -17,8 +17,52 @@
 
 .main {
     background: #000;
+    transition: 5s;
 }
 
 .sidebar {
     color: green;
+}
+
+.container :hover {
+    opacity: 4;
+}
+
+.my-node-enter {
+    opacity: 0;
+}
+
+.my-node-enter-active {
+    opacity: 1;
+    transition: opacity 200ms;
+}
+
+.my-node-exit {
+    opacity: 1;
+}
+
+.my-node-exit-active {
+    opacity: 0;
+    transition: opacity 200ms;
+}
+
+.fade-appear,
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+
+.fade-appear-active,
+.fade-enter .fade-enter-active {
+    opacity: 1;
+    transition: opacity 450ms linear 250ms
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit .fade-exit-active {
+    opacity: 0;
+    transition: opacity 150ms linear;
 }

@@ -1,7 +1,9 @@
 import classes from "./home.module.css"
+import Animation from "../../animation"
 const Home =()=>{ 
 
     return(
+       
         <div className={classes.home}>
             <div className={classes.home1}>
             <h3 >Hi, my name is</h3>
@@ -15,6 +17,7 @@ const Home =()=>{
         </div>
         </div>
         </div>
+       
     )
 }
 export default Home
