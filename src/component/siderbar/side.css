@@ -1,12 +1,13 @@
 nav {
     position: fixed;
-    right: 1rem;
+    right: 1.1rem;
     top: 1.5rem;
 }
 
 li {
     height: 10vh;
     list-style-type: none;
+    text-align: right;
 }
 
 .nav a {
@@ -14,6 +15,7 @@ li {
     cursor: pointer;
     font-size: 1.5em;
     height: 10vh;
+    text-align: right;
     text-decoration: none;
     transition: .2s ease-in-out;
 }

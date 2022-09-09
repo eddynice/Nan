@@ -1,0 +1,60 @@
+.container {
+    position: relative;
+    margin-left: 60px;
+}
+
+.boxes1 {
+    border: 1px solid rgb(255 255 255);
+    height: 400px;
+    padding: 2em;
+    width: 550px;
+    position: absolute;
+    top: 200px;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: .8s ease-in-out;
+    line-height: 3em;
+}
+
+.boxes1 h2:hover {
+    color: #000000;
+}
+
+.icons {
+    height: 30px;
+    width: 50px;
+    float: center;
+}
+
+.boxes2 {
+    position: absolute;
+    border: 1px solid rgb(255 255 255);
+    height: 400px;
+    padding: 2em;
+    width: 550px;
+    left: 600px;
+    line-height: 3em;
+    top: 100px;
+    opacity: 0.6;
+    transition: 1s;
+    cursor: pointer;
+    transition: .8s ease-in-out;
+}
+
+.H1 {
+    font-size: 4em;
+    line-height: 2em;
+    font-weight: bold;
+}
+
+.boxes1:hover {
+    background-color: rgb(255 255 255);
+    opacity: 1;
+    color: #000000;
+}
+
+.boxes2:hover {
+    background-color: rgb(255 255 255);
+    opacity: 1;
+    color: #000000;
+}
