@@ -1,23 +1,41 @@
 import {motion} from "framer-motion"
+import {Outlet,useLocation} from "react-router-dom"
 
-const animation={
-    initial:{opacity:0},
-    animate:{opacity:1},
-    exit:{opacity:0},
-}
-const Animate=({Children})=>{
+const PageLayout = ({ children }) => children;
 
+const pageVariants = {
+  initial: {
+    opacity: 0
+  },
+  in: {
+    opacity: 10
+  },
+  out: {
+    opacity: 0
+  }
+};
 
-    return(
-        <motion.div
-            variants={animation}
-            initial = "inital"
-            animate = "animate"
-            exit="exit"
-            transition={{duration:3}}
-            >
-            {Children}
-        </motion.div>
-    )
-}
-export default Animate
+const pageTransition = {
+  type: "tween",
+  ease: "linear",
+  duration: 0.5
+};
+
+const AnimationLayout = () => {
+  const { pathname } = useLocation();
+  return (
+    <PageLayout>
+      <motion.div
+        key={pathname}
+        initial="initial"
+        animate="in"
+        variants={pageVariants}
+        transition={pageTransition}
+      >
+        <Outlet />
+      </motion.div>
+    </PageLayout>
+  );
+};
+
+export default AnimationLayout

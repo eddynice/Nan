@@ -1,8 +1,10 @@
 import React from 'react';
 import classes from "./about.module.css"
 
+
 export default function about() {
   return (
+    
     <div className={classes.about}>
       <h1>ABOUT ME</h1>
       <h2 className={classes.bigH2}>More About Me</h2>
@@ -25,5 +27,6 @@ and also build engaging and responsive websites.</h2>
 
 
     </div>
+  
   )
 }

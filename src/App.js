@@ -5,39 +5,38 @@ import Skills from './component/skill/Skiil'
 import Sidebar from './component/siderbar/Sidebar'
 import Contact from './component/contact/Contact'
 import Project from './component/project/Project';
-import {AnimatePresence} from "framer-motion"
+import AnimationLayout from "./animation"
 import {
-  Routes,useLocation,
+  Routes,
    Route,
  } from "react-router-dom";
-import {
-  CSSTransition, TransitionGroup} from 'react-transition-group';
+//import {
+ // CSSTransition, TransitionGroup} from 'react-transition-group';
 
 import './App.css';
 
 function App() {
-  const location = useLocation()
+ // const location = useLocation()
   return (
     <div className="container">
       <div className="header">
         <Header/>
       
       </div>
+
       <div className="main">
     
-<Routes>
-
-             <Route exact path="/" element={<Home/>}></Route>
-             <Route exact path="/about" element={<About/>}></Route>
-             <Route exact path="/skills" element={<Skills/>}></Route>
-             <Route exact path="/contact" element={<Contact/>}></Route>
-             <Route exact path="/projects" element={<Project/>}></Route>
-          
-          </Routes>
-         
     
-        
-        
+<Routes>
+<Route element={<AnimationLayout />}/>
+
+<Route  path="/" element={<Home/>}/>
+<Route  path="/about" element={<About/>}/>
+<Route path="/skills" element={<Skills/>}/>
+<Route  path="/contact" element={<Contact/>}/>
+<Route  path="/projects" element={<Project/>}/>
+
+</Routes>
       </div>
       <div className="sidebar">
         <Sidebar/>

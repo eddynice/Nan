@@ -26,10 +26,14 @@ h3 a {
     background-color: rgb(255 255 255 / 27%);
     border-radius: 5px;
     color: rgb(255 255 255);
-    margin: 0 .2em;
     padding: 3px;
+    margin: 1px;
     text-decoration: none;
     transition: .2s ease-in;
+}
+
+h3 a:hover {
+    font-size: 1.1em;
 }
 
 .button button {
@@ -45,4 +49,8 @@ h3 a {
     border: 1px solid white;
     cursor: pointer;
     transition: ease-in-out 0.3s;
+}
+
+.button button:hover {
+    font-size: 1.1em;
 }

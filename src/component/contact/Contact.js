@@ -9,9 +9,15 @@ export default function Contact() {
   console.log(errors);
   
   return (
-    <>
-   
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <div className={classes.container}>
+      <div className={classes.left}>
+        <h2>hello world</h2>
+
+      </div>
+
+
+      <div className={classes.right}>
+        <form onSubmit={handleSubmit(onSubmit)}>
       <div className={classes.text}>
       <input type="text" placeholder="Name" className="" {...register("Name", {})} />
       </div>
@@ -27,7 +33,10 @@ export default function Contact() {
       </div>
       <input type="submit" />
     </form>
+      </div>
+   
     
-    </>
+    
+    </div>
   );
 }
