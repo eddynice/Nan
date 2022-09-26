@@ -8,7 +8,7 @@ const pageVariants = {
     opacity: 0
   },
   in: {
-    opacity: 10
+    opacity: 1
   },
   out: {
     opacity: 0

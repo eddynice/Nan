@@ -1,23 +1,19 @@
 .container {
     position: relative;
-    margin-left: 60px;
+    margin-left: 35px;
 }
 
 .boxes1 {
     border: 1px solid rgb(255 255 255);
-    height: 400px;
-    padding: 2em;
+    height: 380px;
     width: 550px;
     position: absolute;
     top: 200px;
+    padding: 2em;
     opacity: 0.6;
     cursor: pointer;
     transition: .8s ease-in-out;
     line-height: 3em;
-}
-
-.boxes1 h2:hover {
-    color: #000000;
 }
 
 .icons {

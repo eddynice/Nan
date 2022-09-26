@@ -1,11 +1,11 @@
 * {
-    padding: 0 !important;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 body {
-    color: #fff !important;
+    color: #fff;
     font-family: Alumni Sans;
     background: black;
 }
