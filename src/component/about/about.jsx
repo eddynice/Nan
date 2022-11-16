@@ -7,7 +7,7 @@ export default function about() {
     
     <div className={classes.about}>
       <h1>ABOUT ME</h1>
-      <h2 className={classes.bigH2}>More About Me</h2>
+     
       <h2>I'm a Fullstack Software Developer and a technology enthusiast who is passionate about problem solving and adapts well to change. I'm a diverse individual who loves to integrate and contribute meaningfully to the progress of any team I'm opportune to work with. My objectives are to create meaningful and useful products, and be a valuable member of my stakeholders.
 
 I enjoy mentoring, writing, gaming, and meeting new people.</h2>

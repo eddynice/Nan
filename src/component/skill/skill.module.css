@@ -1,14 +1,17 @@
 .container {
-    position: relative;
     margin-left: 35px;
+}
+
+.flex {
+    position: relative;
 }
 
 .boxes1 {
     border: 1px solid rgb(255 255 255);
-    height: 380px;
+    height: 360px;
     width: 550px;
     position: absolute;
-    top: 200px;
+    top: 160px;
     padding: 2em;
     opacity: 0.6;
     cursor: pointer;
@@ -25,12 +28,12 @@
 .boxes2 {
     position: absolute;
     border: 1px solid rgb(255 255 255);
-    height: 400px;
+    height: 360px;
     padding: 2em;
     width: 550px;
     left: 600px;
-    line-height: 3em;
-    top: 100px;
+    line-height: 2.5em;
+    top: 90px;
     opacity: 0.6;
     transition: 1s;
     cursor: pointer;
@@ -38,7 +41,14 @@
 }
 
 .H1 {
-    font-size: 4em;
-    line-height: 2em;
+    font-size: 3em;
     font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .flex {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
 }

@@ -1,16 +1,23 @@
-.container {
-    height: 100vh;
+.grid-container {
     display: grid;
-    grid-template-columns: 50px 1fr 110px;
-    grid-template-rows: 1fr;
+    grid-template-areas: 'header' 'main' 'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 5rem;
+    height: 100%;
 }
 
-.header,
-.main,
-.sidebar {
-    padding: 30px;
+header {
+    grid-area: header;
+    background-color: #203040;
 }
 
-.header {}
+main {
+    grid-area: main;
+    padding: 1rem;
+}
 
-.main {}
+footer {
+    grid-area: footer;
+    background-color: #203040;
+    color: #ffffff;
+}

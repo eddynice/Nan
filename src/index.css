@@ -9,3 +9,27 @@ body {
     font-family: Alumni Sans;
     background: black;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'header' 'main' 'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: 3rem 1fr 2.5rem;
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background-color: #203040;
+}
+
+main {
+    grid-area: main;
+    padding: 0 5rem;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #203040;
+    color: #ffffff;
+}

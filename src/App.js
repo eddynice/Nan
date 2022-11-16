@@ -1,8 +1,10 @@
 import Home from './component/home/Home'
 import Header from './component/header/Header';
-import About from './component/about/about'
+import Footer from './component/footer/Footer';
+import About from './component/about/about';
+
 import Skills from './component/skill/Skiil'
-import Sidebar from './component/siderbar/Sidebar'
+//import Sidebar from './component/siderbar/Sidebar'
 import Contact from './component/contact/Contact'
 import Project from './component/project/Project';
 import AnimationLayout from "./animation"
@@ -13,19 +15,21 @@ import {
 //import {
  // CSSTransition, TransitionGroup} from 'react-transition-group';
 
-import './App.css';
+//import './App.css';
 
 function App() {
  // const location = useLocation()
   return (
-    <div className="container">
-      <div className="header">
-        <Header/>
+    <div className="grid-container">
+      <header>
+      <Header/>
+      </header>
       
-      </div>
+      
+  
 
-      <div className="main">
     
+    <main>
     
 <Routes>
 <Route element={<AnimationLayout />}/>
@@ -37,11 +41,11 @@ function App() {
 <Route  path="/projects" element={<Project/>}/>
 
 </Routes>
-      </div>
-      <div className="sidebar">
-        <Sidebar/>
-       
-      </div>
+</main>
+
+      <footer>
+      <Footer/>
+      </footer>
       
       
       

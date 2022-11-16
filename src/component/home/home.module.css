@@ -1,12 +1,6 @@
-.home {
-    padding-top: 0.7em;
-    width: 95%;
-}
-
 .home1 {
-    margin-top: 150px;
-    margin-left: 230px;
-    line-height: 3.4em;
+    margin: 90px 180px;
+    line-height: 3em;
 }
 
 .home .span {
@@ -53,4 +47,22 @@ h3 a:hover {
 
 .button button:hover {
     font-size: 1.1em;
+}
+
+@media screen and (max-width: 780px) {
+    .home1 {
+        margin: 0;
+        line-height: 2em;
+    }
+    .home1 h3 {
+        color: rgb(112 128 144 / 78%);
+        font-size: 1.4em;
+        padding: 2px;
+    }
+    .home .span {
+        font-size: 1.3em;
+    }
+    .button button {
+        padding: 14px 15px;
+    }
 }

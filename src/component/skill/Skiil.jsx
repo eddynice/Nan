@@ -4,9 +4,9 @@ import classes from "./skill.module.css"
 export default function Skiil() {
   return (
     <div className={classes.container}>
-      <div>
+      
         <h1 className={classes.H1}>SKILLS</h1>
-      </div>
+      <div className={classes.flex}>
       <div className={classes.boxes1}>
       
 <h1 style={{textAlign:"center", fontSize:"50px"}}> <span >
@@ -34,6 +34,7 @@ PHP
 </h2>
 
       </div>
+    </div>
     </div>
   )
 }
