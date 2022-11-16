@@ -1,6 +1,6 @@
 
     import React from 'react';
-import { useForm } from 'react-hook-form';
+//import { useForm } from 'react-hook-form';
 import  "./contact.css"
 
 export default function Contact() {
@@ -15,12 +15,12 @@ export default function Contact() {
   <div className="info">
     <p>I enjoy creating products that help the world become a better place.</p>
     <p>We can do so much together. Let's talk.</p>
-   <p>Email: adekaeatwork@gmail.com
+   <p>Email: osareniyeosazee@gmail.com
 </p> 
-<p>Tel: +234-906-028-9026</p> 
+<p>Tel: +234-81-179-43552</p> 
 <p>My Instagram Pages</p>
-<p>My Tech Page: @tech.saya</p>
-<p>My Design Page: @design.by.saya</p>
+<p>My Tech Page: @</p>
+
 
   </div>
 
@@ -31,10 +31,10 @@ export default function Contact() {
         <input type="text" name="name" placeholder='fullName'/> 
       </div>
       <div className="formControl">
-        <input type="text" name="name"  placeholder='fullName'/>
+        <input type="email" name="name"  placeholder='@email'/>
       </div>
       <div className="formControl">
-        <input type="text" name="name" placeholder='fullName'/>
+        <input type="number" name="name" placeholder='number'/>
       </div>
       <textarea name="Messages" id="" cols="60"  rows="10" className="textArea"></textarea>
       <input type="submit" name="name" className="button" />
