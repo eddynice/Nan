@@ -33,3 +33,9 @@ footer {
     background-color: #203040;
     color: #ffffff;
 }
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 2rem;
+    }
+}

@@ -52,7 +52,7 @@ h3 a:hover {
 @media screen and (max-width: 780px) {
     .home1 {
         margin: 0;
-        line-height: 2em;
+        line-height: 2.5em;
     }
     .home1 h3 {
         color: rgb(112 128 144 / 78%);

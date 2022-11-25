@@ -1,22 +1,20 @@
 .container {
-    margin-left: 35px;
+    
 }
 
 .flex {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .boxes1 {
     border: 1px solid rgb(255 255 255);
-    height: 360px;
-    width: 550px;
-    position: absolute;
-    top: 160px;
     padding: 2em;
-    opacity: 0.6;
     cursor: pointer;
     transition: .8s ease-in-out;
-    line-height: 3em;
+    line-height: 2.5em;
+    background-color:green;
 }
 
 .icons {
@@ -26,14 +24,10 @@
 }
 
 .boxes2 {
-    position: absolute;
     border: 1px solid rgb(255 255 255);
-    height: 360px;
     padding: 2em;
-    width: 550px;
-    left: 600px;
     line-height: 2.5em;
-    top: 90px;
+    background-color:red;
     opacity: 0.6;
     transition: 1s;
     cursor: pointer;
@@ -45,10 +39,36 @@
     font-weight: bold;
 }
 
-@media screen and (max-width: 768px) {
+.hi {
+    text-align: "center";
+    font-size: 50px;
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        width: 100%;
+        margin-left: 0px;
+    }
     .flex {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
+        
+        flex-direction: column;
+        align-items: space-between;
+        gap: 17px;
+    }
+    .boxes2 {
+      
+        font-size: 1em;
+        padding: 0.3px;
+        line-height: 1.5em;
+    }
+    .boxes1 {
+        
+        font-size: 1em;
+        padding: 0.1px;
+        line-height: 1.5em;
+    }
+    .hi {
+        text-align: "center";
+        font-size: 1px;
     }
 }

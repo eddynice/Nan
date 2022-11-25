@@ -1,17 +1,21 @@
 import classes from "./home.module.css";
-import content from "../../data.json"
-console.log(content)
+import {data} from "../../data"
 const Home =()=>{ 
-
     return(
        
         <div className={classes.home}>
             <div className={classes.home1}>
-            <h3 >{content[0].name}</h3>
-            <h1>
-                <span className={classes.span}>{content[0].span}</span>
+                {data.map((user)=>(
+                    <div>
+                        <h3 >{user.names}</h3>
+                        <h1>
+                <span className={classes.span}>{user.span}</span>
             </h1>
-            <h3>{content[0].h3}</h3>
+            <h3>{user.h3}</h3>
+                    </div>
+                    
+                ))}
+           
         <h3> <a href="/projects">View my Projects</a><a href="/#"> My Resume,</a> <a href="/skills">Skills</a>, or send me an email at <a href="/#">osareniyeosazee@gmail.com</a></h3>
        <div className={classes.button}>
         <button>AVAILABLE FOR WORK</button>

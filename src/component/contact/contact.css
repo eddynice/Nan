@@ -46,7 +46,8 @@
 }
 
 input[type="email"],
-[type="text"] {
+[type="text"],
+[type="number"] {
     background-color: rgba(255, 255, 255, 0.075);
     color: rgb(255, 255, 255);
     font-family: "Alumni Sans";
@@ -100,4 +101,17 @@ input[type="submit"]:hover {
     text-decoration: underline;
     background: inherit;
     color: white;
+}
+
+@media screen and (min-width: 600px) {
+    .contactPage {
+        height: 100vh;
+        width: 100vw;
+        padding: 0;
+        border-radius: 20px;
+    }
+    .form {
+        padding: 0;
+        margin: 0;
+    }
 }
