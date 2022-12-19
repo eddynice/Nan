@@ -27,16 +27,16 @@ export default function Contact() {
   </div>
   <div className="right">
     <form className="form">
-      <div className="formControl">
+      <div className="formContrl">
         <input type="text" name="name" placeholder='fullName'/> 
       </div>
       <div className="formControl">
-        <input type="email" name="name"  placeholder='@email'/>
+        <input type="email" name="name"  placeholder='email'/>
       </div>
       <div className="formControl">
         <input type="number" name="name" placeholder='number'/>
       </div>
-      <textarea name="Messages" id="" cols="60"  rows="10" className="textArea"></textarea>
+      <textarea name="Messages" id="" cols="60"  rows="10" placeholder='comment' className="textArea"></textarea>
       <input type="submit" name="name" className="button" />
     </form>
    

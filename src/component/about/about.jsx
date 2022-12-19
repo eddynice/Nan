@@ -12,7 +12,7 @@ export default function about() {
 
 I enjoy mentoring, writing, gaming, and meeting new people.</h2>
 <h2 className={classes.bigH2}>Engineering</h2>
-<h2>My interest in coding started back in 2015 when i got admission into the university to study computer science.As an undergraduate i have the opportunity to meet other computer science student,were we  share ideas, built simple HTML websites with some functionality,
+<h2>My interest in coding started back in 2015 when i got admission into the university to study computer science.As an undergraduate i had the opportunity to meet other computer science student,were we  share ideas, built simple HTML websites with some functionality,
 During my days in school we were given different project on programming to work on, which aiso gave me the opportunity do more research. 
 My experience as a programmer has taught me there are various ways to face a problem and many approaches to solve it. This allows me to come up with creative solutions to practical problems,
 and also build engaging and responsive websites.</h2>

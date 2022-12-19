@@ -2,17 +2,11 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 0px auto;
-    background-color: rgba(82, 82, 82, 0.16);
     color: rgba(144, 142, 142, 0.886);
-    height: 100%;
-    width: 100%;
     border-radius: 20px;
 }
 
 .left {
-    width: 550px;
-    height: 70%;
     line-height: 10px;
 }
 
@@ -21,28 +15,23 @@
     display: flex;
     flex-direction: column;
     text-align: right;
+    margin: 0;
 }
 
 .right {
-    height: 70%;
-    width: 550px;
     background: inherit
 }
 
 .form {
-    height: 70vh;
     border-radius: 5px;
-    padding: 70px 10px;
-    margin: 10px auto;
+    padding: 23px 10px;
     box-sizing: border-box;
     box-shadow: 0px 2px 10px 1px solid black;
-    box-sizing: border-box;
     position: relative;
-    max-width: 840px;
 }
 
 .formControl {
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 
 input[type="email"],
@@ -52,22 +41,23 @@ input[type="email"],
     color: rgb(255, 255, 255);
     font-family: "Alumni Sans";
     font-size: 1.2em;
-    height: 50px;
-    width: 100%;
+    padding: 14px;
+    width: 80%;
     border-width: 2px;
     border-style: solid;
     border-color: rgb(255, 255, 255);
     border-image: initial;
-    margin: 0px 1em 1em 0px;
+    margin: 0px 01em 1em 0px;
 }
 
 .textArea {
-    background-color: rgba(255, 255, 255, 0.075);
     color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.075);
     font-family: "Alumni Sans";
     font-size: 1.2em;
     height: 70px;
-    width: 100%;
+    width: 80%;
+    padding: 14px;
     border-width: 2px;
     border-style: solid;
     border-color: rgb(255, 255, 255);
@@ -83,8 +73,6 @@ input[type="submit"] {
     font-size: 0.9em;
     font-weight: bolder;
     letter-spacing: 4px;
-    position: absolute;
-    right: 0px;
     align-items: flex-start;
     text-align: center;
     text-transform: uppercase;
@@ -92,9 +80,10 @@ input[type="submit"] {
     border-style: solid;
     border-color: rgb(255, 255, 255);
     border-image: initial;
-    padding: 24px 25px;
+    padding: 24px;
     text-decoration: none;
     transition: all 0.3s ease-in-out 0s;
+    width: 40%;
 }
 
 input[type="submit"]:hover {
@@ -103,15 +92,25 @@ input[type="submit"]:hover {
     color: white;
 }
 
-@media screen and (min-width: 600px) {
-    .contactPage {
-        height: 100vh;
-        width: 100vw;
-        padding: 0;
-        border-radius: 20px;
+@media screen and (max-width: 768px) {
+    .left {
+        display: none;
     }
-    .form {
-        padding: 0;
-        margin: 0;
+    input[type="email"],
+    [type="text"],
+    [type="number"] {
+        font-family: "Alumni Sans";
+        font-size: 1em;
+        padding: 10px;
+        margin: 0px 0.5em 1em 0px;
+        width: 100%;
+    }
+    .textArea {
+        color: rgb(255, 255, 255);
+        width: 100%;
+    }
+    input[type="submit"] {
+        padding: 14px;
+        width: 100%;
     }
 }
