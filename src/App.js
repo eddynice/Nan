@@ -4,7 +4,6 @@ import Footer from './component/footer/Footer';
 import About from './component/about/about';
 
 import Skills from './component/skill/Skiil'
-//import Sidebar from './component/siderbar/Sidebar'
 import Contact from './component/contact/Contact'
 import Project from './component/project/Project';
 import AnimationLayout from "./animation"
@@ -12,6 +11,7 @@ import {
   Routes,
    Route,
  } from "react-router-dom";
+ import {FallingLines} from  'react-loader-spinner'
 //import {
  // CSSTransition, TransitionGroup} from 'react-transition-group';
 
@@ -24,22 +24,21 @@ function App() {
       <header>
       <Header/>
       </header>
-      
-      
-  
 
     
     <main>
     
 <Routes>
-<Route element={<AnimationLayout />}/>
+  
+
+ <Route element={<AnimationLayout />}>
 
 <Route  path="/" element={<Home/>}/>
 <Route  path="/about" element={<About/>}/>
 <Route path="/skills" element={<Skills/>}/>
 <Route  path="/contact" element={<Contact/>}/>
 <Route  path="/projects" element={<Project/>}/>
-
+</Route>
 </Routes>
 </main>
 
