@@ -1,6 +1,6 @@
 import classes from "./home.module.css";
 import {data} from "../../data";
-import {  useNavigate } from "react-router-dom";
+import {  useNavigate,Link } from "react-router-dom";
 const Home =()=>{ 
     const navigate = useNavigate();
 
@@ -24,7 +24,7 @@ const Home =()=>{
                     
                 ))}
            
-        <h3> <a href="/projects">View my Projects</a><a href="/#"> My Resume,</a> <a href="/skills">Skills</a>, or send me an email at <a href="/#">osareniyeosazee@gmail.com</a></h3>
+        <h3> <Link to="/projects">View my Projects</Link><a href="/#"> My Resume,</a> <a href="/skills">Skills</a>, or send me an email at <a href="/#">osareniyeosazee@gmail.com</a></h3>
        <div className={classes.button}>
        
 

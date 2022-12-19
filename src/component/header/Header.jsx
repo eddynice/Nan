@@ -1,14 +1,15 @@
 /// Navbar.js
 import "./header.css"
 import { useState } from "react";
+import { Link } from "react-router-dom";
 export default function Navbar() {
     
     const [isNavExpanded, setIsNavExpanded] = useState(false)
     return (
       <nav className="navigation">
-        <a href="/" className="brand-name">
+        <Link to="/" className="brand-name">
           MacroSoft
-        </a>
+        </Link>
         <button className="hamburger"onClick={()=>{setIsNavExpanded(!isNavExpanded);
         }}>
           {/* icon from heroicons.com */}
@@ -31,19 +32,19 @@ export default function Navbar() {
           }>
           <ul>
             <li>
-              <a href="/">Home</a>
+            <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/projects">Project</a>
+              <Link to="/projects">user 1</Link>
             </li>
             <li>
-              <a href="/skills">Skills</a>
+              <Link to="/skills">Skills</Link>
             </li>
             <li>
-              <a href="/about">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="/contact">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
