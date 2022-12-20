@@ -1,12 +1,20 @@
 
-    import React from 'react';
+    import React,{useState} from 'react';
 //import { useForm } from 'react-hook-form';
 import  "./contact.css"
 
 export default function Contact() {
   //const { register, handleSubmit, formState: { errors } } = useForm();
-  //const onSubmit = data => console.log(data);
-  //console.log(errors);
+  
+  const [toSend, setTosend] = useState({name:"",
+email:"",number:"",message:"",
+})
+const onSubmit =(e) => {
+  e.preventDefault()
+}
+ const handleChange = (e)=>{
+  setTosend({ ...toSend, [e.target.name]: e.target.value})
+ }
   
   return (
     <div><h1 style={{fontSize:"4em"}}>Get In Contact</h1>
@@ -26,17 +34,17 @@ export default function Contact() {
 
   </div>
   <div className="right">
-    <form className="form">
+    <form onSubmit={onSubmit}   className="form">
       <div className="formContrl">
-        <input type="text" name="name" placeholder='fullName'/> 
+        <input type="text" name="name" value={toSend.name} onChange={handleChange} placeholder='fullName'/> 
       </div>
       <div className="formControl">
-        <input type="email" name="name"  placeholder='email'/>
+        <input type="email" name="email"  placeholder='email' value={toSend.email} onChange={handleChange} />
       </div>
       <div className="formControl">
-        <input type="number" name="name" placeholder='number'/>
+        <input type="number" name="number" placeholder='number' value={toSend.number} onChange={handleChange}/>
       </div>
-      <textarea name="Messages" id="" cols="60"  rows="10" placeholder='comment' className="textArea"></textarea>
+      <textarea name="Message" id="" cols="60"  rows="10" placeholder='comment' className="textArea"  value={toSend.message} onChange={handleChange}></textarea>
       <input type="submit" name="name" className="button" />
     </form>
    
