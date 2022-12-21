@@ -52,6 +52,7 @@ h3 a:hover {
 @media screen and (max-width: 780px) {
     .home1 {
         margin: 0;
+        margin: 60px;
         line-height: 2.5em;
     }
     .home1 h3 {
