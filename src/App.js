@@ -6,7 +6,8 @@ import About from './component/about/about';
 import Skills from './component/skill/Skiil'
 import Contact from './component/contact/Contact'
 import Project from './component/project/Project';
-import AnimationLayout from "./animation"
+import AnimationLayout from "./animation";
+import Resume from "./component/Resume"
 import {
   Routes,
    Route,
@@ -38,6 +39,7 @@ function App() {
 <Route path="/skills" element={<Skills/>}/>
 <Route  path="/contact" element={<Contact/>}/>
 <Route  path="/projects" element={<Project/>}/>
+<Route  path="/resume" element={<Resume/>}/>
 </Route>
 </Routes>
 </main>
