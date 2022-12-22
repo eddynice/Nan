@@ -35,7 +35,7 @@ export default function Navbar() {
             <Link to="/"  >Home</Link>
             </li>
             <li>
-              <Link to="/projects">user 1</Link>
+              <Link to="/projects">Projects</Link>
             </li>
             <li>
               <Link to="/skills">Skills</Link>
