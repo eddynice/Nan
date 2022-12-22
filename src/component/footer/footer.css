@@ -1,0 +1,37 @@
+.footer {
+    background-color: #203040;
+}
+
+.footer h2,
+p {
+    text-align: center;
+}
+
+.Icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.Links {
+    border-bottom: 1px solid rgb(21, 21, 21);
+}
+
+.UL {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.footer li {
+    list-style-type: none;
+    margin: 0 1rem;
+}
