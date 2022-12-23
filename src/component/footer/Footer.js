@@ -18,7 +18,10 @@ export default function Footer() {
         <li>
             <Link to="/"  >Home</Link>
             </li>
+            </div>
+            <div>
             <li>
+
               <Link to="/projects">user 1</Link>
             </li>
             <li>
@@ -32,9 +35,7 @@ export default function Footer() {
             <li>
               <Link to="/contact">Contact</Link>
             </li>
-            <li>
-              <Link to="/resume">Resume</Link>
-            </li>
+           
             </div>
             
           </ul>

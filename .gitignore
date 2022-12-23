@@ -5,6 +5,11 @@
 /.pnp
 .pnp.js
 
+
+public/cmaps
+public/standard_fonts
+public/pdf.worker.js
+
 # testing
 /coverage
 

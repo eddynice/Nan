@@ -21,6 +21,16 @@ p {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    background-color: #192a69;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: .9rem;
+}
+
+li {
+    margin-bottom: 1rem;
 }
 
 .footer li a {

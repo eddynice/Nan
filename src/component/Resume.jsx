@@ -1,33 +1,48 @@
 
-import React from 'react';
-import { Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer';
+import React, { useState } from 'react';
+import { Document, Page } from 'react-pdf';
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
+import 'react-pdf/dist/esm/Page/TextLayer.css';
+import hdd from "../assest/javascript.pdf"
 
-// Create styles
-const styles = StyleSheet.create({
-  page: {
-    flexDirection: 'row',
-    backgroundColor: '#E4E4E4'
-  },
-  section: {
-    margin: 10,
-    padding: 10,
-    flexGrow: 1
+import './resume.css';
+console.log(hdd);
+const options = {
+  cMapUrl: 'cmaps/',
+  cMapPacked: true,
+  standardFontDataUrl: 'standard_fonts/',
+};
+
+export default function Sample() {
+  const [file, setFile] = useState(hdd);
+  const [numPages, setNumPages] = useState(null);
+
+  function onFileChange(event) {
+    setFile(event.target.files[0]);
   }
-});
 
-// Create Document Component
-const MyDocument = () => (
-  <Document>
-    <Page size="A4" style={styles.page}>
-      <View style={styles.section}>
-        <Text>Section #1</Text>
-      </View>
-      <View style={styles.section}>
-        <Text>Section #2</Text>
-      </View>
-    </Page>
-  </Document>
-);
-export default MyDocument
+  function onDocumentLoadSuccess({ numPages: nextNumPages }) {
+    setNumPages(nextNumPages);
+  }
 
- 
+  return (
+    <div className="Example">
+      <header>
+        <h1>react-pdf sample page</h1>
+      </header>
+      <div className="Example__container">
+        <div className="Example__container__load">
+          <label htmlFor="file">Load from file:</label>{' '}
+          <input onChange={onFileChange} type="file" />
+        </div>
+        <div className="Example__container__document">
+          <Document file={file} onLoadSuccess={onDocumentLoadSuccess} options={options}>
+            {Array.from(new Array(numPages), (el, index) => (
+              <Page key={`page_${index + 1}`} pageNumber={index + 1} />
+            ))}
+          </Document>
+        </div>
+      </div>
+    </div>
+  );
+}
