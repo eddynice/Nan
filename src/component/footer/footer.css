@@ -1,16 +1,22 @@
 .footer {
-    background-color: #203040;
+    background-color: #192a69;
 }
 
-.footer h2,
-p {
+.footer p {
     text-align: center;
+    margin-top: 5px;
+}
+
+.footer h2 {
+    text-align: center;
+    margin: 0.5em 1px;
+    font-size: 2.4rem;
 }
 
 .Icons {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
 }
 
 .Links {
@@ -23,10 +29,8 @@ p {
     align-items: center;
     flex-wrap: wrap;
     gap: 0.5rem;
-    background-color: #192a69;
     color: #fff;
     font-family: 'Roboto', sans-serif;
-    font-size: .9rem;
 }
 
 li {
@@ -39,9 +43,24 @@ li {
     width: 100%;
     color: #fff;
     font-size: 1.3rem;
+    line-height: 1.8em;
 }
 
 .footer li {
     list-style-type: none;
     margin: 0 1rem;
+}
+
+.name {
+    font-size: 3em;
+}
+
+@media screen and (max-width: 768px) {
+    .UL {
+        justify-content: center;
+        gap: 10px;
+    }
+    .name {
+        font-size: 1em;
+    }
 }

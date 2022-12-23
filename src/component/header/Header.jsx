@@ -2,13 +2,14 @@
 import "./header.css"
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { DiCodeigniter } from "react-icons/di";
 export default function Navbar() {
     
     const [isNavExpanded, setIsNavExpanded] = useState(false)
     return (
       <nav className="navigation">
         <Link to="/" className="brand-name">
-          OSAZ
+          <DiCodeigniter/>SAZE
         </Link>
         <button className="hamburger"onClick={()=>{setIsNavExpanded(!isNavExpanded);
         }}>
@@ -31,9 +32,7 @@ export default function Navbar() {
             isNavExpanded ? "navigationMenu expanded" : "navigationMenu"
           }>
           <ul>
-            <li>
-            <Link to="/"  >Home</Link>
-            </li>
+           
             <li>
               <Link to="/projects">Projects</Link>
             </li>
