@@ -40,7 +40,7 @@ export default function Footer() {
       <ul className="UL">
         <div>
         <li>
-            <Link to="/" style={{fontSize:'3em'}} > <DiCodeigniter/>SAZE</Link>
+            <Link to="/" className="name" > <DiCodeigniter/>SAZE</Link>
             </li>
             </div>
             <div>
