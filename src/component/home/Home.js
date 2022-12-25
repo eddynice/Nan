@@ -16,9 +16,11 @@ const Home =()=>{
                 {data.map((user)=>(
                     <div>
                         <h3 >{user.names}</h3>
+                        <div className={classes.p}>
                         <h1>
                 <span className={classes.span}>{user.span}</span>
             </h1>
+            </div>
             <h3>{user.h3}</h3>
                     </div>
                     
