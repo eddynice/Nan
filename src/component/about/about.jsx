@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from "./about.module.css"
-
+import {Link} from "react-router-dom"
 
 export default function about() {
   return (
@@ -23,7 +23,7 @@ and also build engaging and responsive websites.</h2>
 </h2>
 
 <h2 style={{marginTop:"16px",marginBottom:"10px"}}>You can read more about me, experience, skills, and education in the PDF attached below:</h2>
-<a href="/" target="_blank" rel="noreferrer" className={classes.button}>My Resume</a>
+<Link to="/resume"  className={classes.button}>My Resume</Link>
 
 
     </div>

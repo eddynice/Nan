@@ -24,7 +24,8 @@ const Home =()=>{
                     
                 ))}
            
-        <h3> <Link to="/projects">View my Projects</Link>{" "}<Link to="/resume"> My Resume</Link>{" "} <Link to="/skills">Skills</Link>{" "} or send me an email at <a href="/#">osareniyeosazee@gmail.com</a></h3>
+        <h3> <Link to="/projects">View my Projects</Link>{" "}<Link to="/resume"> My Resume</Link>{" "} <Link to="/skills">Skills</Link>{" "} or send me an E-mail to  <a href="mailto:osareniyeosazee@gmail.com?body=My custom mail body"> osareniyeosazee@gmail.com</a></h3>
+        
        <div className={classes.button}>
 
         <button onClick={redirectToContact}> AVAILABLE FOR WORK </button>

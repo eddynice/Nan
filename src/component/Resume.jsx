@@ -1,12 +1,13 @@
-
 import React, { useState } from 'react';
-import { Document, Page } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
-import hdd from "../assest/javascript.pdf"
+
+import Doc from "../assest/cv.pdf";
 
 import './resume.css';
-console.log(hdd);
+import { Document, Page, pdfjs } from "react-pdf";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
 const options = {
   cMapUrl: 'cmaps/',
   cMapPacked: true,
@@ -14,12 +15,10 @@ const options = {
 };
 
 export default function Sample() {
-  const [file, setFile] = useState(hdd);
+  const [file] = useState(Doc);
   const [numPages, setNumPages] = useState(null);
 
-  function onFileChange(event) {
-    setFile(event.target.files[0]);
-  }
+  
 
   function onDocumentLoadSuccess({ numPages: nextNumPages }) {
     setNumPages(nextNumPages);
@@ -27,14 +26,11 @@ export default function Sample() {
 
   return (
     <div className="Example">
-      <header>
-        <h1>react-pdf sample page</h1>
-      </header>
+      
+        <h1>My Resume</h1>
+     
       <div className="Example__container">
-        <div className="Example__container__load">
-          <label htmlFor="file">Load from file:</label>{' '}
-          <input onChange={onFileChange} type="file" />
-        </div>
+       
         <div className="Example__container__document">
           <Document file={file} onLoadSuccess={onDocumentLoadSuccess} options={options}>
             {Array.from(new Array(numPages), (el, index) => (

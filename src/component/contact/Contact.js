@@ -47,15 +47,15 @@ const onSubmit =(e) => {
   <div className="right">
     <form onSubmit={onSubmit}   className="form">
       <div className="formContrl">
-        <input type="text" name="from_name" value={toSend.from_name} onChange={handleChange} placeholder='fullName'/> 
+        <input type="text" name="from_name" required value={toSend.from_name} onChange={handleChange} placeholder='fullName'/> 
       </div>
       <div className="formControl">
         <input type="email" name="email"  placeholder='email' value={toSend.email} onChange={handleChange} />
       </div>
       <div className="formControl">
-        <input type="number" name="number" placeholder='number' value={toSend.number} onChange={handleChange}/>
+        <input type="number" name="number" required placeholder='number' value={toSend.number} onChange={handleChange}/>
       </div>
-      <textarea name="message" id="" cols="60"  rows="10" placeholder='comment' className="textArea"  value={toSend.message} onChange={handleChange}></textarea>
+      <textarea name="message" id="" cols="60"   rows="10" required placeholder='comment' className="textArea"  value={toSend.message} onChange={handleChange}></textarea>
       <input type="submit" name="name" className="button" />
     </form>
    

@@ -3,12 +3,18 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
+        "@mdi/font": "^7.1.96",
+        "@phuocng/react-pdf-viewer": "^1.7.0",
         "@react-pdf/renderer": "^3.0.1",
         "@testing-library/jest-dom": "^5.16.1",
         "@testing-library/react": "^12.1.2",
         "@testing-library/user-event": "^13.5.0",
+        "bulma": "^0.9.4",
+        "bulma-helpers": "^0.4.3",
         "emailjs-com": "^3.2.0",
         "framer-motion": "^4.1.17",
+        "pdf-viewer-reactjs": "^2.2.3",
+        "pdfjs-dist": "^3.1.81",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
         "react-hook-form": "^7.34.2",
@@ -21,13 +27,16 @@
         "web-vitals": "^2.1.4"
     },
     "scripts": {
-        "copy-cmaps": "node ./scripts/cmaps.js",
-        "copy-standard-fonts": "node ./scripts/standard-fonts.js",
-        "copy-worker": "node ./scripts/worker.js",
+        "copy-cmaps": "node ./scripts/copy-cmaps.js",
+        "copy-standard-fonts": "node ./scripts/copy-standard-fonts.js",
+        "copy-worker": "node ./scripts/copy-worker.js",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
+    },
+    "resolutions": {
+        "mini-css-extract-plugin": "~2.4.0"
     },
     "eslintConfig": {
         "extends": [
