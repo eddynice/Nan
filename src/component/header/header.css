@@ -34,6 +34,12 @@
     width: 100%;
     color: #fff;
     font-size: 1.3rem;
+    transition: all 0.3s ease-in-out 0s;
+    width: 40%;
+}
+
+.navigationMenu li a:hover {
+    text-decoration: underline;
 }
 
 .hamburger {
@@ -76,7 +82,7 @@
         flex-direction: column;
         width: 100%;
         height: calc(100vh - 77px);
-        background-color: white;
+        background-color: #000;
         border-top: 1px solid black;
         z-index: 2;
     }
@@ -85,12 +91,12 @@
         margin: 0;
     }
     .navigationMenu li a {
-        color: black;
+        color: #192a69;
         width: 100%;
         padding: 1.5rem 0;
     }
     .navigationMenu li:hover {
-        background-color: #eee;
+        background-color: rgb(72, 72, 85);
     }
 }
 

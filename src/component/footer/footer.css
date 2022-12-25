@@ -11,6 +11,7 @@
     text-align: center;
     margin: 0.5em 1px;
     font-size: 2.4rem;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .Icons {
@@ -40,9 +41,14 @@ li {
     text-decoration: none;
     display: block;
     width: 100%;
-    color: #fff;
+    color: rgb(157, 143, 143);
     font-size: 1.3rem;
     line-height: 1.8em;
+    font-family: 'Crimson Text', serif;
+}
+
+.footer li a:hover {
+    color: #fff;
 }
 
 .footer li {
@@ -50,8 +56,11 @@ li {
     margin: 0 1rem;
 }
 
-.name {
+.names {
     font-size: 3em;
+    font-weight: 12px;
+    font-size: bold;
+    color: red;
 }
 
 @media screen and (max-width: 768px) {
@@ -60,6 +69,6 @@ li {
         gap: 10px;
     }
     .name {
-        font-size: 1em;
+        font-size: 2em;
     }
 }

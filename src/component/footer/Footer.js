@@ -8,7 +8,7 @@ export default function Footer() {
   const Style= {color:"white", fontSize:"2.5em"}
   return (
     <div className="footer">
-      <h2>You can AISO FIND ME AT</h2>
+      <h2>You can aiso follow me </h2>
 
 
 
@@ -40,7 +40,7 @@ export default function Footer() {
       <ul className="UL">
         <div>
         <li>
-            <Link to="/" className="name" > <DiCodeigniter/>SAZE</Link>
+            <Link to="/" className="names" style={{color:"#fff",fontSize:'1.5em'}} > <DiCodeigniter/>SAZE</Link>
             </li>
             </div>
             <div>
