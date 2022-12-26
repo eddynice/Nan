@@ -16,7 +16,7 @@ export default function Footer() {
 
 
       <div className="Icons">
-        <div className="one">
+        <div className="icon">
         
       
      <Link to="/"> <BsFacebook style={Style} />{" "}</Link>
@@ -24,7 +24,7 @@ export default function Footer() {
 
         </div>
         <div className="2">
-          <Link to="/"> <BsTwitter style={Style} />{" "}</Link>
+          <Link to="/"> <BsTwitter style={Style} className="icon" />{" "}</Link>
           </div>
         <div className="3">
         <Link to="/"> <BsGithub style={Style} />{" "}</Link>

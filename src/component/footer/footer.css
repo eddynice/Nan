@@ -20,6 +20,22 @@
     gap: 20px;
 }
 
+.icon {
+    color: #1a69;
+}
+
+.icon:hover {
+    color: yellow;
+    width: 3em;
+    height: 1.3em;
+}
+
+.names {
+    font-size: 3em;
+    font-weight: 12px;
+    font-size: bold;
+}
+
 .Links {
     border-bottom: 1px solid rgb(21, 21, 21);
 }
@@ -54,13 +70,6 @@ li {
 .footer li {
     list-style-type: none;
     margin: 0 1rem;
-}
-
-.names {
-    font-size: 3em;
-    font-weight: 12px;
-    font-size: bold;
-    color: red;
 }
 
 @media screen and (max-width: 768px) {
