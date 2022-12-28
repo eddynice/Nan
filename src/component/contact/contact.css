@@ -88,7 +88,6 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     text-decoration: underline;
-    background: inherit;
     color: white;
     border-color: white;
     background-color: #192a69;

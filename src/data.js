@@ -1,3 +1,6 @@
+import img
+from "./assest/IMG1.jpeg"
+
 export const data = [
     { names: "Hi, my name is" },
     { span: "Osareniye Osazee" },
@@ -25,4 +28,28 @@ export const backend = [{
         ]
     }
 
-]
+];
+
+
+export const project = [{
+        "Title": "Star Wars: Episode ",
+        "link": "1977",
+        "story": "tt0076759",
+        "Type": "movie",
+        "img": img
+    },
+    {
+        "Title": "Star Wars: Episode ",
+        "link": "1977",
+        "story": "tt0076759",
+        "Type": "movie",
+        "img": img
+    },
+    {
+        "Title": "Star Wars: ",
+        "link": "1977",
+        "story": "tt0076759",
+        "Type": "movie",
+        "img": img
+    }
+];

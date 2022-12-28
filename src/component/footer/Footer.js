@@ -35,6 +35,13 @@ export default function Footer() {
         <div className="4">
           <Link to="/"> <BsLinkedin style={Style} />{" "}</Link>
         </div>
+        <a
+          href="https://github.com/sinansarikaya/react-movie-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <BsGithub />
+        </a>
       </div>
       <div className="Links">
       <ul className="UL">
@@ -59,6 +66,7 @@ export default function Footer() {
             <li>
               <Link to="/contact">Contact</Link>
             </li>
+           
            
             </div>
             

@@ -14,10 +14,10 @@ import {
    Route,
  } from "react-router-dom";
  import {Rings} from  'react-loader-spinner'
-//import {
- // CSSTransition, TransitionGroup} from 'react-transition-group';
-
 import './App.css';
+
+import {project} from "./data"
+//console.log(movies)
 
 function App() {
   const [loading, setloading] = useState(false)
@@ -37,9 +37,9 @@ function App() {
        <Rings
   height="100"
   width="100"
-  color=" #192a69"
+  color=" #fff"
   radius="6"
-  wrapperStyle={{display:"flex",justifyContent:"center",alignItems:"center"}}
+  wrapperStyle={{ backgroundColor:"#192a69", height:"100vh",display:"flex",justifyContent:"center",alignItems:"center"}}
   wrapperClass=""
   visible={true}
   ariaLabel="rings-loading"
@@ -56,12 +56,12 @@ function App() {
     
   
    <Route element={<AnimationLayout />}>
-  
+   
   <Route  path="/" element={<Home/>}/>
   <Route  path="/about" element={<About/>}/>
   <Route path="/skills" element={<Skills/>}/>
   <Route  path="/contact" element={<Contact/>}/>
-  <Route  path="/projects" element={<Project/>}/>
+  <Route  path="/projects" element={<Project  project={project}/>}/>
   <Route  path="/resume" element={<Resume/>}/>
   <Route path="*" element={<ErrorPage />} />
   </Route>
