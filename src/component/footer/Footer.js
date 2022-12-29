@@ -19,15 +19,21 @@ export default function Footer() {
         <div className="icon">
         
       
-     <Link to="/"> <BsFacebook style={Style} />{" "}</Link>
+        <a href="https://github.com/sinansarikaya/react-movie-app"
+          target="_blank"
+          rel="noopener noreferrer"> <BsFacebook style={Style} />{" "}</a>
     
 
         </div>
         <div className="2">
-          <Link to="/"> <BsTwitter style={Style} className="icon" />{" "}</Link>
+         <a href="https://github.com/sinansarikaya/react-movie-app"
+          target="_blank"
+          rel="noopener noreferrer"><BsTwitter style={Style} className="icon" /></a> {" "}
           </div>
         <div className="3">
-        <Link to="/"> <BsGithub style={Style} />{" "}</Link>
+        <a href="https://github.com/sinansarikaya/react-movie-app"
+          target="_blank"
+          rel="noopener noreferrer"> <BsGithub style={Style} />{" "}</a>
         </div>
         <div className="4">
           <Link to="/"> <BsInstagram style={Style} />{" "}</Link>
