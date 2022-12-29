@@ -3,13 +3,36 @@ import  "./contact.css";
 import emailjs from 'emailjs-com';
 
 
+
+
+
+
 export default function Contact() {
+
+
+
+  const [loading, setloading] = useState(false)
+  // const location = useLocation()
+ 
+
+
+
   const [toSend, setTosend] = useState({from_name:"",
   email:"",number:"",message:"",
 })
 
+
+
+
+
+
 const onSubmit =(e) => {
   e.preventDefault()
+
+  setloading(true);
+  setTimeout(()=>{
+   setloading(false);
+  },3000);
   setTosend({
     from_name:"",
     email:"",number:"",message:"",
