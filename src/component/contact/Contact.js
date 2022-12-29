@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import  "./contact.css";
 import emailjs from 'emailjs-com';
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -8,13 +9,13 @@ import emailjs from 'emailjs-com';
 
 
 export default function Contact() {
+let history = useNavigate();
 
 
-
-  const [loading, setloading] = useState(false)
+  //const [loading, setloading] = useState(true)
   // const location = useLocation()
  
-
+ const [status, setStatus] = useState(undefined);
 
 
   const [toSend, setTosend] = useState({from_name:"",
@@ -28,11 +29,8 @@ export default function Contact() {
 
 const onSubmit =(e) => {
   e.preventDefault()
-
-  setloading(true);
-  setTimeout(()=>{
-   setloading(false);
-  },3000);
+ // history('/');
+ 
   setTosend({
     from_name:"",
     email:"",number:"",message:"",
@@ -40,9 +38,13 @@ const onSubmit =(e) => {
   emailjs.send("service_0teafvs","template_z08gfgv",toSend,"arzK141-u7gAHVTUG")
   .then((response)=>{
     console.log("Sucess", response.status, response.text);
+     setStatus({ type: 'success', });
+      history('/');
   })
   .catch((err)=>{
-    console.log("Failed", err)
+    console.log("Failed", err);
+     setStatus({ type: 'error', });
+     history('/contact');
   })
 }
 
@@ -81,6 +83,11 @@ const onSubmit =(e) => {
       <textarea name="message" id="" cols="60"   rows="10" required placeholder='comment' className="textArea"  value={toSend.message} onChange={handleChange}></textarea>
       <input type="submit" name="name" className="button" />
     </form>
+  
+    {status?.type === 'success' && alert(" Successful")}
+      {status?.type === 'error' && (
+       alert("message not successfull") 
+      )}
    
   </div>
   </div>
