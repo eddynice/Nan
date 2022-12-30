@@ -25,29 +25,31 @@ export default function Footer() {
     
 
         </div>
-        <div className="2">
+        <div className="icon">
          <a href="https://github.com/sinansarikaya/react-movie-app"
           target="_blank"
           rel="noopener noreferrer"><BsTwitter style={Style} className="icon" /></a> {" "}
           </div>
-        <div className="3">
+        <div className="icon1">
         <a href="https://github.com/sinansarikaya/react-movie-app"
           target="_blank"
           rel="noopener noreferrer"> <BsGithub style={Style} />{" "}</a>
         </div>
-        <div className="4">
-          <Link to="/"> <BsInstagram style={Style} />{" "}</Link>
-        </div>
-        <div className="4">
-          <Link to="/"> <BsLinkedin style={Style} />{" "}</Link>
-        </div>
+        <div className="icon2">
         <a
           href="https://github.com/sinansarikaya/react-movie-app"
           target="_blank"
           rel="noopener noreferrer"
-        >
-          <BsGithub />
-        </a>
+        > <BsInstagram style={Style} />{" "}</a>
+        </div>
+        <div className="icon3">
+        <a
+          href="https://github.com/sinansarikaya/react-movie-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        > <BsLinkedin style={Style} />{" "}</a>
+        </div>
+      
       </div>
       <div className="Links">
       <ul className="UL">
@@ -79,7 +81,7 @@ export default function Footer() {
           </ul>
 
       </div>
-      <p>@CopyRight 2022</p>
+      <p style={{padding:"5px"}}>@CopyRight 2022</p>
     </div>
   )
 }

@@ -20,14 +20,31 @@
     gap: 20px;
 }
 
-.icon {
-    color: #1a69;
-}
+.icon {}
 
 .icon:hover {
-    color: yellow;
-    width: 3em;
-    height: 1.3em;
+    width: 1.1em;
+    height: 1.1em;
+}
+
+.icon1:hover {
+    width: 1.1em;
+    height: 1.1em;
+}
+
+.icon2:hover {
+    width: 1.1em;
+    height: 1.1em;
+}
+
+.icon3:hover {
+    width: 1.1em;
+    height: 1.1em;
+}
+
+.icon4:hover {
+    width: 1.1em;
+    height: 1.1em;
 }
 
 .names {
