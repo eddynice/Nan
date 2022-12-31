@@ -8,7 +8,8 @@ import Contact from './component/contact/Contact'
 import Project from './component/project/Project';
 import AnimationLayout from "./animation";
 import ErrorPage from "./component/notFound/ErrorPage"
-import Resume from "./component/Resume"
+import Resume from "./component/Resume";
+import { ToastContainer } from "react-toastify";
 import {
   Routes,
    Route,
@@ -17,11 +18,15 @@ import {
 import './App.css';
 
 import {project} from "./data"
+
+//import AlertTemplate from "react-alert-template-basic";
 //console.log(movies)
 
 function App() {
   const [loading, setloading] = useState(false)
  // const location = useLocation()
+
+
  useEffect(() => {
    setloading(true);
    setTimeout(()=>{
@@ -31,6 +36,8 @@ function App() {
  
   
   return (
+  
+  
     <div className="grid-container">
       {loading ? (
         <div className="loading">
@@ -50,6 +57,7 @@ function App() {
         <header>
         <Header/>
         </header>
+       
       <main>
       
   <Routes>
@@ -67,17 +75,19 @@ function App() {
   </Route>
   </Routes>
   </main>
-  
+ 
         <footer>
         <Footer/>
         </footer>
         </>
       )}
+       <ToastContainer />
      
       
       
       
     </div>
+    
   );
 }
 

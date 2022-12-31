@@ -16,41 +16,39 @@ export default function Footer() {
 
 
       <div className="Icons">
-        <div className="icon">
         
-      
-        <a href="https://github.com/sinansarikaya/react-movie-app"
+      <a href="https://m.facebook.com/osazee.endurance.7"
           target="_blank"
           rel="noopener noreferrer"> <BsFacebook style={Style} />{" "}</a>
     
 
-        </div>
-        <div className="icon">
-         <a href="https://github.com/sinansarikaya/react-movie-app"
+       
+       
+         <a href="https://twitter.com/iameddynics"
           target="_blank"
           rel="noopener noreferrer"><BsTwitter style={Style} className="icon" /></a> {" "}
-          </div>
-        <div className="icon1">
-        <a href="https://github.com/sinansarikaya/react-movie-app"
+      
+        
+        <a href="https://github.com/eddynice"
           target="_blank"
           rel="noopener noreferrer"> <BsGithub style={Style} />{" "}</a>
-        </div>
-        <div className="icon2">
+        
+      
         <a
-          href="https://github.com/sinansarikaya/react-movie-app"
+          href="https://github.com/sinst"
           target="_blank"
           rel="noopener noreferrer"
         > <BsInstagram style={Style} />{" "}</a>
-        </div>
-        <div className="icon3">
+       
+       
         <a
-          href="https://github.com/sinansarikaya/react-movie-app"
+          href="https://www.linkedin.com/in/osazee-osareniye-5724a11b4"
           target="_blank"
           rel="noopener noreferrer"
         > <BsLinkedin style={Style} />{" "}</a>
-        </div>
-      
+        
       </div>
+      
       <div className="Links">
       <ul className="UL">
         <div>

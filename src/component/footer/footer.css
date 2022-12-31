@@ -17,34 +17,11 @@
 .Icons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
 }
-
-.icon {}
 
 .icon:hover {
-    width: 1.1em;
-    height: 1.1em;
-}
-
-.icon1:hover {
-    width: 1.1em;
-    height: 1.1em;
-}
-
-.icon2:hover {
-    width: 1.1em;
-    height: 1.1em;
-}
-
-.icon3:hover {
-    width: 1.1em;
-    height: 1.1em;
-}
-
-.icon4:hover {
-    width: 1.1em;
-    height: 1.1em;
+    color: bisque;
 }
 
 .names {
