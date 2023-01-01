@@ -1,7 +1,7 @@
 import React from 'react'
 import "./footer.css";
 import { Link } from "react-router-dom";
-import { BsFacebook ,BsTwitter,BsGithub,BsInstagram,BsLinkedin} from "react-icons/bs";
+import { BsFacebook ,BsTwitter,BsGithub,BsLinkedin} from "react-icons/bs";
 import { DiCodeigniter } from "react-icons/di";
 export default function Footer() {
 
