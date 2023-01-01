@@ -13,8 +13,8 @@ const Home =()=>{
        
         <div className={classes.home}>
             <div className={classes.home1}>
-                {data.map((user)=>(
-                    <div>
+                {data.map((user, index)=>(
+                    <div key={index}>
                         <h3 >{user.names}</h3>
                         <div className={classes.p}>
                         <h1>
