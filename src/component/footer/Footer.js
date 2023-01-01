@@ -34,11 +34,7 @@ export default function Footer() {
           rel="noopener noreferrer"> <BsGithub style={Style} />{" "}</a>
         
       
-        <a
-          href="https://github.com/sinst"
-          target="_blank"
-          rel="noopener noreferrer"
-        > <BsInstagram style={Style} />{" "}</a>
+       
        
        
         <a
