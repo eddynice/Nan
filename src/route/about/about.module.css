@@ -1,0 +1,34 @@
+.about {
+    margin-bottom: 40px;
+}
+
+.about h1 {
+    font-size: 4em
+}
+
+.about h2 {
+    font-size: 1.2em;
+}
+
+.about .bigH2 {
+    font-size: 2.8em;
+    line-height: 1.8em;
+}
+
+.button {
+    background-color: #fff;
+    border-radius: 5px;
+    border-color: #192a69;
+    color: #192a69;
+    margin: 20px .2em 10px 0;
+    padding: 10px;
+    height: 100px;
+    text-decoration: none;
+    transition: .2s ease-in;
+}
+
+.button:hover {
+    background-color: #192a69;
+    color: rgb(255 255 255);
+    text-decoration: underline;
+}

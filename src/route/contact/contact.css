@@ -1,0 +1,117 @@
+.contactPage {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgba(144, 142, 142, 0.886);
+    border-radius: 20px;
+}
+
+.left {
+    line-height: 10px;
+}
+
+.info {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin: 0;
+}
+
+.right {
+    background: inherit
+}
+
+.form {
+    border-radius: 5px;
+    padding: 23px 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 10px 1px solid black;
+    position: relative;
+}
+
+.formControl {
+    margin-bottom: 0;
+}
+
+input[type="email"],
+[type="text"],
+[type="number"] {
+    background-color: rgba(255, 255, 255, 0.075);
+    color: rgb(255, 255, 255);
+    font-family: "Alumni Sans";
+    font-size: 1.2em;
+    padding: 14px;
+    width: 80%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-image: initial;
+    margin: 0px 01em 1em 0px;
+}
+
+.textArea {
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.075);
+    font-family: "Alumni Sans";
+    font-size: 1.2em;
+    height: 70px;
+    width: 80%;
+    padding: 14px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-image: initial;
+    margin: 0px 1em 1em 0px;
+}
+
+input[type="submit"] {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-family: "Alumni Sans";
+    font-size: 0.9em;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    align-items: flex-start;
+    text-align: center;
+    text-transform: uppercase;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #192a69;
+    border-image: initial;
+    padding: 24px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out 0s;
+    width: 40%;
+}
+
+input[type="submit"]:hover {
+    text-decoration: underline;
+    color: white;
+    border-color: white;
+    background-color: #192a69;
+}
+
+@media screen and (max-width: 768px) {
+    .left {
+        display: none;
+    }
+    input[type="email"],
+    [type="text"],
+    [type="number"] {
+        font-family: "Alumni Sans";
+        font-size: 1em;
+        padding: 10px;
+        margin: 0px 0.5em 1em 0px;
+        width: 100%;
+    }
+    .textArea {
+        color: rgb(255, 255, 255);
+        width: 100%;
+    }
+    input[type="submit"] {
+        padding: 14px;
+        width: 100%;
+    }
+}

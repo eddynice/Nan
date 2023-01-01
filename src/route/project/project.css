@@ -1,0 +1,73 @@
+.H1 {
+    font-size: 3em;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contain {
+    position: relative;
+    border: 3px solid #192a69;
+    padding: 0.1em;
+    margin: 0.6em;
+    transition: .8s ease-in-out;
+    line-height: 1.5em;
+    width: 320px;
+    height: 340px !important;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.image {
+    display: block;
+    width: 310px;
+    height: 330px !important;
+    border-radius: 3px
+}
+
+.contain:hover .overlay {
+    opacity: 1;
+    border: 1px solid #fff;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .8s ease-in-out;
+    background-color: #192a69;
+    border-radius: 10px;
+}
+
+.text {
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    text-decoration: underline;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-style: italic;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 780px) {
+    .grid {
+        flex-direction: column;
+        gap: 0.4em;
+    }
+}

@@ -1,0 +1,71 @@
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+    gap: 5em;
+    justify-content: center;
+}
+
+.flex :hover {
+    background-color: white;
+    color: #000;
+}
+
+.box {
+    border: 1px solid rgb(255 255 255);
+    padding: 2em;
+    transition: .8s ease-in-out;
+    line-height: 2.5em;
+    width: 420px;
+    height: 340px;
+}
+
+.icons {
+    height: 30px;
+    width: 50px;
+    float: center;
+}
+
+.box h2 {
+    font-size: 1.2em;
+}
+
+.box h3 {
+    font-size: 1.4em;
+}
+
+.H1 {
+    font-size: 3em;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.hi {
+    text-align: "center";
+    font-size: 3em;
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        width: 100%;
+    }
+    .flex {
+        flex-direction: column;
+        align-items: space-between;
+        gap: 17px;
+    }
+    .box {
+        width: 100%;
+        height: 100%;
+    }
+    .hi {
+        text-align: "center";
+        font-size: 1px;
+    }
+    .H1 {
+        padding-bottom: 10px;
+    }
+}
