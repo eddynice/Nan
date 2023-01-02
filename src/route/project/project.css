@@ -1,7 +1,7 @@
 .H1 {
     font-size: 3em;
     font-weight: bold;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 
 .grid {
@@ -40,12 +40,12 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100%;
-    width: 100%;
     opacity: 0;
     transition: .8s ease-in-out;
     background-color: #192a69;
     border-radius: 1px;
+    height: 100%;
+    width: 100%;
 }
 
 .text {
@@ -66,6 +66,9 @@
 @media screen and (max-width: 780px) {
     .grid {
         flex-direction: column;
-        gap: 0.4em;
+    }
+    .overlay {
+        height: 100% !important;
+        width: 100% !important;
     }
 }

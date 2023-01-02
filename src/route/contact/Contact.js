@@ -2,35 +2,19 @@ import React,{useState} from 'react';
 import  "./contact.css";
 import emailjs from 'emailjs-com';
 import { useNavigate } from "react-router-dom";
-
-
-import {toastSuccessNotify,toastErrorNotify} from '../../helpers/ToastNotify'
-
+import {toastSuccessNotify,toastErrorNotify} from '../../helpers/ToastNotify';
+import {contacts} from "../../data"
 
 
 export default function Contact() {
 let history = useNavigate();
 
-
-  //const [loading, setloading] = useState(true)
-  // const location = useLocation()
- 
- //const [status, setStatus] = useState(undefined);
-
-
   const [toSend, setTosend] = useState({from_name:"",
   email:"",number:"",message:"",
 })
 
-
-
-
-
-
 const onSubmit =(e) => {
   e.preventDefault()
- // history('/');
- 
   setTosend({
     from_name:"",
     email:"",number:"",message:"",
@@ -39,7 +23,7 @@ const onSubmit =(e) => {
   .then((response)=>{
     //console.log("Sucess", response.status, response.text);
      //setStatus({ type: 'success', });
-     toastSuccessNotify("thNKSKSSLSLSL")
+     toastSuccessNotify("message sent successful")
       history('/');
   })
   .catch((err)=>{
@@ -47,7 +31,6 @@ const onSubmit =(e) => {
      //setStatus({ type: 'error', });
      history('/contact');
      toastErrorNotify("message not sent, Try again")
-    
   })
 }
 
@@ -56,20 +39,23 @@ const onSubmit =(e) => {
  }
   
   return (
-    <div><h1 style={{fontSize:"4em"}}>Get In Contact</h1>
+    <div>
+
+      <h1 style={{fontSize:"4em"}}>Get In Contact</h1>
+
 <div className="contactPage">
   <div className="left">
-  <div className="info">
-    <p>I enjoy creating products that help the world become a better place.</p>
-    <p>We can do so much together. Let's talk.</p>
-   <p>Email: osareniyeosazee@gmail.com
+{contacts.map((contact, index)=>(
+  <div key={index} className="info">
+    <p>{contact.p1}</p>
+    <p>{contact.p2}</p>
+   <p>{contact.p3}
 </p> 
-<p>Tel: +234-81-179-43552</p> 
-<p>My Instagram Pages</p>
-<p>My Tech Page: @</p>
-
-
+<p>{contact.p4}</p> 
+<p>{contact.p5}</p>
+<p>{contact.p6}</p>
   </div>
+  ))}
 
   </div>
   <div className="right">
@@ -86,8 +72,6 @@ const onSubmit =(e) => {
       <textarea name="message" id="" cols="60"   rows="10" required placeholder='comment' className="textArea"  value={toSend.message} onChange={handleChange}></textarea>
       <input type="submit" name="name" className="button" />
     </form>
-  
-   
   </div>
   </div>
 </div>

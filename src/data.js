@@ -15,6 +15,30 @@ export const data = [
     { span: "Osareniye Osazee" },
     { h3: "Full Stack Developer and Graphic designer. I enjoy building things for the web." }
 ];
+
+export const contacts = [{
+    h1: "Get In Contact",
+    p1: 'I enjoy creating products that help the world become a better place.',
+    p2: "We can do so much together. Let's talk.",
+    p3: "Email: osareniyeosazee@gmail.com",
+    p4: " Tel:  +234-814-732-1386",
+    p5: "My Instagram Pages",
+    p6: "My Tech Page: @ github.com/eddynice",
+
+}];
+export const abouts = [{
+    h1: "ABOUT ME",
+    h2: " I'm a Fullstack Software Developer and a technology enthusiast who is passionate about problem solving and adapts well to change. I'm a diverse individual who loves to integrate and contribute meaningfully to the progress of any team I'm opportune to work with. My objectives are to create meaningful and useful products, and be a valuable member of my stakeholders. I enjoy mentoring, writing, gaming, and meeting new people.",
+    heading1: "Engineering",
+    h3: "My interest in coding started back in 2015 when i got admission into the university to study computer science.As an undergraduate i had the opportunity to meet other computer science student,were we  share ideas, built simple HTML websites with some functionality,During my days in school we were given different project on programming to work on, which aiso gave me the opportunity do more research. My experience as a programmer has taught me there are various ways to face a problem and many approaches to solve it. This allows me to come up with creative solutions to practical problems, and also build engaging and responsive websites.",
+    heading2: "Hobby",
+    h4: "I love football, listening to music, reading motivational books, and outdoor activities.",
+    h5: "You can read more about me, experience, skills, and education in the Resume page below",
+
+}];
+
+
+
 export const frontEnd = [{
         headerOne: "FRONTEND",
         headTwo: "I love bringing ideas to life. I love to create designs that are simple, minimalistic, and convey meaningful messages.",

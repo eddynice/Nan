@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from "./skill.module.css";
-import {frontEnd} from "../../data";
-import {backend} from "../../data"
+import {frontEnd,backend} from "../../data";
+//import {backend} from "../../data"
 
 export default function Skiil() {
   
