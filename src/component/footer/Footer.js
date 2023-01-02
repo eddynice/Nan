@@ -75,7 +75,7 @@ export default function Footer() {
           </ul>
 
       </div>
-      <p style={{padding:"5px"}}>&#169;{" "}2023 osaze</p>
+      <p style={{padding:"5px"}}>&#169;{" "}2023 {" "} osaze</p>
     </div>
   )
 }
