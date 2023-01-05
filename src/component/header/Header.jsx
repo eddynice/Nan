@@ -10,7 +10,7 @@ export default function Navbar() {
     const [isNavExpanded, setIsNavExpanded] = useState(false)
     return (
       <nav className='navigation'>
-        <Link to="/" className='brand-name'>
+        <Link to="/" className='brand-name'    onClick={()=>{setIsNavExpanded(!isNavExpanded)}}>
           <DiCodeigniter/>SAZE
         </Link>
         <button className='hamburger' onClick={()=>{setIsNavExpanded(!isNavExpanded);
