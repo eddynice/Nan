@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
-
 import Doc from "../../assest/cv.pdf";
 
-import './resume.css';
+import style from  './resume.module.css';
 import { Document, Page, pdfjs } from "react-pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -25,13 +24,13 @@ export default function Sample() {
   }
 
   return (
-    <div className="Example">
+    <div className={style.Example}>
       
         <h1>My Resume</h1>
      
-      <div className="Example__container">
+      <div className={style.Example__container}>
        
-        <div className="Example__container__document">
+        <div className={style.Example__container__document}>
           <Document file={file} onLoadSuccess={onDocumentLoadSuccess} options={options}>
             {Array.from(new Array(numPages), (el, index) => (
               <Page key={`page_${index + 1}`} pageNumber={index + 1} />

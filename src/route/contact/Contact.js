@@ -1,10 +1,9 @@
 import React,{useState} from 'react';
-import  "./contact.css";
 import emailjs from 'emailjs-com';
 import { useNavigate } from "react-router-dom";
 import {toastSuccessNotify,toastErrorNotify} from '../../helpers/ToastNotify';
 import {contacts} from "../../data"
-
+import style from  "./contact.module.css";
 
 export default function Contact() {
 let history = useNavigate();
@@ -21,14 +20,11 @@ const onSubmit =(e) => {
   })
   emailjs.send("service_0teafvs","template_z08gfgv",toSend,"arzK141-u7gAHVTUG")
   .then((response)=>{
-    //console.log("Sucess", response.status, response.text);
-     //setStatus({ type: 'success', });
+   
      toastSuccessNotify("message sent successful")
       history('/');
   })
   .catch((err)=>{
-    //console.log("Failed", err);
-     //setStatus({ type: 'error', });
      history('/contact');
      toastErrorNotify("message not sent, Try again")
   })
@@ -43,10 +39,10 @@ const onSubmit =(e) => {
 
       <h1 style={{fontSize:"4em"}}>Get In Contact</h1>
 
-<div className="contactPage">
-  <div className="left">
+<div className={style.contactPage}>
+  <div className={style.left}>
 {contacts.map((contact, index)=>(
-  <div key={index} className="info">
+  <div key={index} className={style.info}>
     <p>{contact.p1}</p>
     <p>{contact.p2}</p>
    <p>{contact.p3}
@@ -58,19 +54,19 @@ const onSubmit =(e) => {
   ))}
 
   </div>
-  <div className="right">
-    <form onSubmit={onSubmit}   className="form">
-      <div className="formContrl">
+  <div className={style.right}>
+    <form onSubmit={onSubmit}   className={style.form}>
+      <div className={style.formControl}>
         <input type="text" name="from_name" required value={toSend.from_name} onChange={handleChange} placeholder='fullName'/> 
       </div>
-      <div className="formControl">
+      <div className={style.formControl}>
         <input type="email" name="email"  placeholder='email' value={toSend.email} onChange={handleChange} />
       </div>
-      <div className="formControl">
+      <div className={style.formControl}>
         <input type="number" name="number" required placeholder='number' value={toSend.number} onChange={handleChange}/>
       </div>
-      <textarea name="message" id="" cols="60"   rows="10" required placeholder='comment' className="textArea"  value={toSend.message} onChange={handleChange}></textarea>
-      <input type="submit" name="name" className="button" />
+      <textarea name="message" id="" cols="60"   rows="10" required placeholder='comment' className={style.textArea}  value={toSend.message} onChange={handleChange}></textarea>
+      <input type="submit" name="name" className={style.button} />
     </form>
   </div>
   </div>

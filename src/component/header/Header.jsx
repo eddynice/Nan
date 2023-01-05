@@ -1,17 +1,19 @@
-/// Navbar.js
-import "./header.css"
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { DiCodeigniter } from "react-icons/di";
+import   "./header.css"
+
+
+
 export default function Navbar() {
     
     const [isNavExpanded, setIsNavExpanded] = useState(false)
     return (
-      <nav className="navigation">
-        <Link to="/" className="brand-name">
+      <nav className='navigation'>
+        <Link to="/" className='brand-name'>
           <DiCodeigniter/>SAZE
         </Link>
-        <button className="hamburger"onClick={()=>{setIsNavExpanded(!isNavExpanded);
+        <button className='hamburger' onClick={()=>{setIsNavExpanded(!isNavExpanded);
         }}>
           {/* icon from heroicons.com */}
           <svg

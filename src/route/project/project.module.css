@@ -44,8 +44,6 @@
     transition: .8s ease-in-out;
     background-color: #192a69;
     border-radius: 1px;
-    height: 100%;
-    width: 100%;
 }
 
 .text {
@@ -67,8 +65,19 @@
     .grid {
         flex-direction: column;
     }
+    .contain {
+        width: 100%;
+        height: 100%;
+    }
     .overlay {
-        height: 100% !important;
+        height: 100%;
+        width: 100%;
+    }
+    .image {
         width: 100% !important;
+        height: 100%;
+    }
+    .contain {
+        width: 100%;
     }
 }

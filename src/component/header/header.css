@@ -5,6 +5,7 @@
     position: relative;
     padding: 0.5rem 0rem;
     color: black;
+    transition: .8s ease-in-out;
 }
 
 .brand-name {
@@ -16,6 +17,7 @@
 
 .navigationMenu {
     margin-left: auto;
+    transition: .8s ease-in-out;
 }
 
 .navigationMenu ul {
@@ -91,9 +93,10 @@
         margin: 0;
     }
     .navigationMenu li a {
-        color: #192a69;
+        background-color: #192a69;
         width: 100%;
         padding: 1.5rem 0;
+        color: aliceblue
     }
     .navigationMenu li:hover {
         background-color: rgb(72, 72, 85);

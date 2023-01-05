@@ -1,13 +1,15 @@
-import React from 'react'
-import "./footer.css";
 import { Link } from "react-router-dom";
 import { BsFacebook ,BsTwitter,BsGithub,BsLinkedin} from "react-icons/bs";
 import { DiCodeigniter } from "react-icons/di";
+import styles from "./footer.module.css";
+
+
+
 export default function Footer() {
 
   const Style= {color:"white", fontSize:"2.5em"}
   return (
-    <div className="footer">
+    <div className={styles.footer}>
       <h2>You can aiso follow me </h2>
 
 
@@ -15,7 +17,7 @@ export default function Footer() {
 
 
 
-      <div className="Icons">
+      <div className={styles.Icons}>
         
       <a href="https://m.facebook.com/osazee.endurance.7"
           target="_blank"
@@ -32,10 +34,6 @@ export default function Footer() {
         <a href="https://github.com/eddynice"
           target="_blank"
           rel="noopener noreferrer"> <BsGithub style={Style} />{" "}</a>
-        
-      
-       
-       
        
         <a
           href="https://www.linkedin.com/in/osazee-osareniye-5724a11b4"
@@ -45,11 +43,11 @@ export default function Footer() {
         
       </div>
       
-      <div className="Links">
-      <ul className="UL">
+      <div className={styles.Links}>
+      <ul className={styles.UL}>
         <div>
         <li>
-            <Link to="/" className="names" style={{color:"#fff",fontSize:'1.5em'}} > <DiCodeigniter/>SAZE</Link>
+            <Link to="/" className={styles.names} style={{color:"#fff",fontSize:'1.5em'}} > <DiCodeigniter/>SAZE</Link>
             </li>
             </div>
             <div>
