@@ -50,3 +50,12 @@
     padding: 20px;
     color: white;
 }
+
+@media screen and (max-width: 768px) {
+    .Example__container {
+        width: 100%;
+    }
+    .Example__container__document .react-pdf__message {
+        width: 100%;
+    }
+}
