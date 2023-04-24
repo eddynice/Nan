@@ -123,9 +123,9 @@ export const project = [{
     },
     {
         "Title": "my first profolio ",
-        "link": "https://osareniye.netlify.app",
+        "link": "https://myosazee.netlify.app",
         "story": "tt0076759",
-        "Type": "movie",
+        "Type": "personal",
         "img": profile
     },
     {
