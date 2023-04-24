@@ -123,7 +123,7 @@ export const project = [{
     },
     {
         "Title": "my first profolio ",
-        "link": "https://myosazee.netlify.app",
+        "link": "https://osareniye.netlify.app",
         "story": "tt0076759",
         "Type": "movie",
         "img": profile
