@@ -9,7 +9,7 @@ export default function Skiil() {
   return (
     <div className={classes.container}>
       
-        <h1 className={classes.H1}>SKILLS</h1>
+        <h1 className={classes.H}>SKILLS</h1>
 
       <div className={classes.flex}>
       

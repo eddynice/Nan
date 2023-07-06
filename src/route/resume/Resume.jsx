@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
-import Doc from "../../assest/cvsample.pdf";
+import Doc from "../../assest/OSAZEE.pdf";
 
 import style from  './resume.module.css';
 import { Document, Page, pdfjs } from "react-pdf";
