@@ -10,7 +10,7 @@ export default function Footer() {
   const Style= {color:"white", fontSize:"2.5em"}
   return (
     <div className={styles.footer}>
-      <h2>You can aiso follow me </h2>
+      <h2>You can also follow me </h2>
 
 
 

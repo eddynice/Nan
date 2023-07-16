@@ -10,9 +10,22 @@ export default function Navbar() {
     const [isNavExpanded, setIsNavExpanded] = useState(false)
     return (
       <nav className='navigation'>
+        <div>
         <Link to="/" className='brand-name' >
           <DiCodeigniter/>SAZE
         </Link>
+        </div>
+
+
+
+
+
+
+
+
+<div>
+
+
         <button className='hamburger' onClick={()=>{setIsNavExpanded(!isNavExpanded);
         }}>
           {/* icon from heroicons.com */}
@@ -29,10 +42,15 @@ export default function Navbar() {
             />
           </svg>
         </button>
+
+
+
         <div onClick={()=>{setIsNavExpanded(!isNavExpanded)}}
          className={
             isNavExpanded ? "navigationMenu expanded" : "navigationMenu"
           }>
+
+
           <ul>
            
             <li>
@@ -48,6 +66,7 @@ export default function Navbar() {
               <Link to="/contact">Contact</Link>
             </li>
           </ul>
+        </div>
         </div>
       </nav>
     );
